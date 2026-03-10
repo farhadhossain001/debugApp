@@ -95,10 +95,11 @@
       }
     </script>
     <style>
-       html, body {
-        overscroll-behavior: none;
-        -webkit-overflow-scrolling: auto;
+      html, body {
+        overscroll-behavior-y: none;
+        touch-action: pan-x pan-y;
       }
+
       /* Custom Scrollbar for cleaner look */
       ::-webkit-scrollbar {
         width: 8px;
@@ -129,7 +130,7 @@
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 transition-colors duration-300">
+  <body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-100 transition-colors duration-300 overscroll-y-none bg-fixed">
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
